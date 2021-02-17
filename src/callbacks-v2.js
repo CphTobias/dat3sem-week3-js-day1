@@ -51,7 +51,7 @@ console.log(carsUnder5000);
 function generateSqlStatements(cars) {
   const sqlStatements = cars.map(
     car =>
-      `INSERT INTO cars (id, yar, make, model, price) VALUES (${car.id}, ${car.year}, ${car.make}, ${car.model}, ${car.price})`
+      `INSERT INTO cars (id, year, make, model, price) VALUES (${car.id}, ${car.year}, ${car.make}, ${car.model}, ${car.price})`
   );
   return sqlStatements;
 }
